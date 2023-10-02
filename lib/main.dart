@@ -47,8 +47,12 @@ final books = [
 List<String> findBooks(String term) {
   var searchRanks = <SearchRank>[];
   for (var book in books) {
-    int ranking = partialRatio(
-        ('${book.title} ${book.author} ${book.genre} ${book.summary}'), term);
+    String textToSearch =
+        ('${book.title} ${book.author} ${book.genre} ${book.summary}')
+            .toLowerCase();
+
+    int ranking = partialRatio(textToSearch, term.toLowerCase());
+    ;
     searchRanks.add(SearchRank(book, ranking));
   }
   searchRanks.sort((a, b) => b.rank.compareTo(a.rank));
