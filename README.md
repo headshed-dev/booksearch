@@ -1,4 +1,4 @@
-# Book Search App
+# Flutter Book Search App
 
 This is a Flutter app that allows users to search for books by title, author, or genre. The app uses the fuzzywuzzy package to perform fuzzy string matching on the user's search query, returning a list of books that match the query.
 
@@ -25,3 +25,5 @@ If you would like to contribute to this app, feel free to submit a pull request 
 This app is licensed under the MIT License. See the LICENSE file for more information.
 
 This is just an example, so feel free to modify it to fit your specific app and needs.
+
+<!-- language: lang-dart -->
